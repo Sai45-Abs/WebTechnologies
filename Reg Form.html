@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>Driver Registration Form</title>
+</head>
+<body bgcolor="#EE4B2B" align="center">
+<h1 align="center" style="font-family: Impact; color: black;">Formula 1 Driver Registration</h1>
+<form align="justified" action="https://www.formula1.com/" method="get">
+<h2 style="font-family: Tahoma; font-weight: bold; color: black;">Personal Information</h2><br>
+<label for="fname">First Name:</label><br>
+<input type="text" id="fname" name="fname"><br><br>
+<label for="lname">Last Name:</label><br>
+<input type="text" id="lname" name="lname"><br><br>
+<label for="nationality">Nationality:</label><br>
+<input type="text" id="nationality" name="nationality"><br><br>
+<label for="phone">Phone Number:</label><br>
+<input type="tel" id="phone" name="phone"><br><br><br>
+<h2 style="font-family: Tahoma; color: black;">Racing Profile & Team Details</h2><br>
+<label>Select Team:</label><br>
+<input type="radio" id="mercedes" name="team" value="mercedes">
+<label for="mercedes">Mercedes-AMG Petronas</label><br>
+<input type="radio" id="ferrari" name="team" value="ferrari">
+<label for="ferrari">Scuderia Ferrari</label><br>
+<input type="radio" id="mclaren" name="team" value="mclaren">
+<label for="mclaren">McLaren Formula 1 Team</label><br>
+<input type="radio" id="redbull" name="team" value="redbull">
+<label for="redbull">Red Bull Racing</label><br>
+<input type="radio" id="astonmartin" name="team" value="astonmartin">
+<label for="astonmartin">Aston Martin Aramco</label><br>
+<input type="radio" id="other" name="team" value="other">
+<label for="other">Others</label><br><br>
+<label for="driver_num">Preferred Racing Number (1-99):</label><br>
+<input type="number" id="driver_num" name="driver_num" min="1" max="99"><br><br>
+<label for="experience">Years of Racing Experience:</label><br>
+<input type="number" id="experience" name="experience" min="0" max="40"><br><br>
+<label for="license">Super Licence ID:</label><br>
+<input type="text" id="license" name="license"><br><br><br>
+<h2 style="font-family: Tahoma; color: black;">Category & Preferences</h2><br>
+<label>Role / Position:</label><br>
+<input type="radio" id="primary" name="role" value="primary">
+<label for="primary">Primary Driver</label>
+<input type="radio" id="reserve" name="role" value="reserve">
+<label for="reserve">Reserve Driver</label>
+<input type="radio" id="academy" name="role" value="academy">
+<label for="academy">Academy Driver</label><br><br>
+<input type="checkbox" id="terms" name="terms">
+<label for="terms">I agree to the FIA Regulations and Competition Terms.</label><br><br><br>
+<input type="submit" value="Submit Registration">
+<input type="reset" value="Reset Form">
+</form>
+</body>
+</html>
