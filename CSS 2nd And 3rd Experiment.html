@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>F1 Showcase & CSS Effects</title>
+<style>
+body {
+text-align: left;
+background-image: url('max.gif');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+margin: 0;
+font-family: Arial, sans-serif;
+}
+.nav-h {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #000;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+z-index: 1000;
+}
+.nav-h li {
+float: left;
+}
+.nav-h li a {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+.nav-h li a:hover {
+background-color: #111;
+}
+.hero-spacer {
+height: 80vh;
+}
+.main-content {
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+padding: 20px;
+gap: 30px;
+background: rgba(0, 0, 0, 0.4);
+backdrop-filter: blur(2px);
+}
+.gallery {
+display: flex;
+flex-wrap: wrap;
+width: 960px;
+gap: 15px;
+margin: 0;
+}
+.gallery img {
+width: 300px;
+height: auto;
+filter: grayscale(100%);
+transition: transform 0.5s ease, filter 0.5s ease;
+vertical-align: middle;
+}
+.gallery img:hover {
+transform: scale(1.15);
+filter: grayscale(0%);
+border: 3px solid black;
+z-index: 10;
+}
+table {
+border-collapse: collapse;
+background-color: #000000;
+margin: 0 20px 0 auto;
+font-family: 'Trebuchet MS';
+color: #e10600;
+overflow: hidden;
+}
+th {
+border: 2px solid #e10600;
+padding: 12px 25px;
+text-align: left;
+background-color: #111111;
+color: #ff3333;
+text-shadow: 0 0 6px rgba(255, 0, 0, 0.6);
+}
+td {
+border: 1px solid #330000;
+padding: 10px 25px;
+text-align: left;
+}
+tr {
+transition: transform 0.3s ease, background-color 0.3s ease;
+}
+tr:hover {
+transform: scale(1.05);
+background-color: #1f0000;
+}
+</style>
+</head>
+<body>
+<ul class="nav-h">
+<li><a href="#Home">Home</a></li>
+<li><a href="#Teams">Teams</a></li>
+<li><a href="#Drivers">Drivers</a></li>
+<li><a href="#Tracks">Tracks</a></li>
+</ul>
+<div class="hero-spacer"></div>
+<div class="main-content">
+<div class="gallery">
+<img src="exp2.jpg" alt="Click Image 1" title="First Image">
+<img src="w13.jpg" alt="Click Image 2">
+<img src="Ferrari Car.jpeg" alt="Click Image 3">
+<img src="sgp.png" alt="Click Image 4">
+<img src="wil.jpg" alt="Click Image 5">
+<img src="ab21.jpg" alt="Click Image 6">
+</div>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Age</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>George</td>
+<td>28</td>
+</tr>
+<tr>
+<td>Oscar</td>
+<td>25</td>
+</tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>
