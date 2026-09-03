@@ -1,0 +1,39 @@
+<html>
+<head>
+<title> Login Validation </title>
+</head>
+<body bgcolor="creme";>
+<br><br><br><br><br><br><br><br><br>
+<h2 align="center" style="font-family: Tahoma";">Login Form</h2>
+<form style="font-family: Impact;" align="center" onsubmit="return validateLogin()"action="https://www.formula1.com/" method="get">
+Username:
+<input type="text" id="username">
+<br><br>
+Password:
+<input type="password" id="password">
+<br><br>
+<input type="submit" value="Login">
+<input type="reset" value="Reset">
+</form>
+<script>
+function validateLogin(){
+let username = document.getElementById("username").value;
+let password = document.getElementById("password").value;
+if(username == "") {
+alert("Please enter username");
+return false;
+}
+if(password==""){
+alert("Please enter password");
+return false;
+}
+if (username == "George" && password == "Norfolk63"){
+alert("Login Successful");
+return true;
+}
+alert("Invalid Username And Password");
+return false;
+}
+</script>
+</body>
+</html>
